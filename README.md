@@ -10,11 +10,12 @@
 **作者**：zyzk1998  
 **仓库**：`https://github.com/zyzk1998/agent-mini`
 **文件简介**：
-1. weather_agent.py：服务器内Python调用大模型+天气查询工具
-2. bash_agent.md:服务器内直接用curl请求命令大模型调用天气查询工具
-3. 
+day1. weather_agent.py：服务器内Python调用大模型+天气查询工具
+day2. bash_agent.md:服务器内直接用curl请求命令大模型调用天气查询工具
+day3. agent_DB.py:新增DB系统
+day4. prompt engineering
 ---
-
+# day1.
 ## 1. 背景与目标
 
 - **零依赖**：仅用 `curl + jq + bash`  
@@ -178,3 +179,9 @@ bash-agent-mini/
 #### 未来方向：以本次实验为技术基础，实现在生物医学垂直领域上，通过本地大模型 + 自主工具闭环，让模型不仅能读懂基因序列，更能驱动实验流程、解析病理报告、预测药物响应，形成全链路智能决策引擎，助力精准医疗与生命科学研究迈向自主可控的智能化新纪元。
 ![示例图片](ReAct-agent_flow)
 
+# day2.
+## 1. 背景及意义
+#### 在day1的基础上，实现从bash命令行->Python语言的转换，对齐课题组颗粒度和接口标准，为面向用户的application做准备。
+
+## 2. 实机演示
+<img width="1024" height="105" alt="image" src="https://github.com/user-attachments/assets/66a13c86-d206-4927-bc66-45265928232e" />
